@@ -42,12 +42,15 @@ EduLinkedListNode *RemoveNthLastNode(EduLinkedListNode *head, int n)
 
 ```
 
-## Missed point
+## Review
+간단하게 접근한다면 Linkde List의 사이즈를 받고, 끝에서 부터 _n_ 번째 node로 접근하여 앞의 노드의 _ptr_ 을 저장하고, 바로 뒤에 있는 node와 연결하는 형태로 문제를 풀 수 있다. 그러나 이렇게 풀면 Linked List를 두번을 탐색 해야하지만 Two pointers 방법을 통하면 한번의 탐색으로 문제를 해결 할 수 있다.
+
+### Missed point
 ```cpp
 	if (!right) {
 		return head->next;
 	}
 ```
 
-## Review
-//
+## To-Do
+* 간단하게 풀었을 때의 코드 작성
